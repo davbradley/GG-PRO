@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Guaranteed Giving">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>Horizontal menu Page</title>
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+<!--dynamic table-->
+  <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
+  <link href="js/advanced-datatable/css/demo_table.css" rel="stylesheet" />
+  <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="horizontal-menu-page">
+
+<section>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--<li ><a href="index.html">Dashboard</a></li>-->
+                    <li class="active"><a href="#">How It Works</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Donate <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Start Giving</a></li>
+                            <li><a href="#">Manage My Giving</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">Fontawesome</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organizations <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">List Your Organization</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!--<img alt="" src="images/photos/user-avatar.png">--><i class="fa fa-user"></i><span class="user-name">Jennifer Ratterree</span><b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a href="#"><i class="fa fa-dollar"></i>  My Giving</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i>  Account Setting</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                Find Your Organization
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="active"> Organizations </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+
+<!-- datatable-->
+        <div class="row">
+        <div class="col-sm-12">
+        <section class="panel">
+        <header class="panel-heading">
+            1. Select Your Organization
+            <!--<span class="tools pull-right">
+                <a href="javascript:;" class="fa fa-chevron-down"></a>
+             </span>-->
+        </header>
+        <div class="panel-body">
+        <div class="adv-table">
+        <table class="display table table-bordered" id="hidden-table-info">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="hidden-phone">City</th>
+            <th class="hidden-phone">State</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="gradeA">
+            <td>A Church In A City</td>
+            <td>Church Organization</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeC">
+            <td>B Church In A City</td>
+            <td>Church Organiztion</td>
+            <td class="hidden-phone">Boston</td>
+            <td class="center hidden-phone">MA</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Boys &amp; Girls Club in Brooklyn</td>
+            <td>Youth Club</td>
+            <td class="hidden-phone">Brooklyn</td>
+            <td class="center hidden-phone">NY</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Boy &amp; Girls Club in the City</td>
+            <td>Youth Club</td>
+            <td class="hidden-phone">New York City</td>
+            <td class="center hidden-phone">NY</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Mothers Against Drunk Driving (M.A.D.D.)</td>
+            <td>Political Action Group</td>
+            <td class="hidden-phone">Montpelier</td>
+            <td class="center hidden-phone">VA</td>
+        </tr>
+        <tr class="gradeA">
+            <td>PETA - Minneapolis Chapter</td>
+            <td>Animal Shelter</td>
+            <td class="hidden-phone">Minneapolis</td>
+            <td class="center hidden-phone">MN</td>
+        </tr>
+        <tr class="gradeA">
+            <td>YMCA South Austin</td>
+            <td>Youth Club</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeA">
+            <td>YMCA Town Lake</td>
+            <td>Youth Club</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Austin Pets Alive</td>
+            <td>Animal Shelter</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeA">
+            <td><a href="#">Gateway Community Church</a></td>
+            <td>Church Organization</td>
+            <td class="hidden-phone">Anchorage</td>
+            <td class="center hidden-phone">AK</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Austin Parks Association</td>
+            <td>Environmental Group</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Rocky Mountain National Parks Association</td>
+            <td>Environmental Group</td>
+            <td class="hidden-phone">Estes Park</td>
+            <td class="center hidden-phone">CO</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Adopt A Highway - Wyoming Chapter</td>
+            <td>Environmental Group</td>
+            <td class="hidden-phone">Chayenne</td>
+            <td class="center hidden-phone">WY</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Boy Scouts of America - Troop 35</td>
+            <td>Youth Club</td>
+            <td class="hidden-phone">Seattle</td>
+            <td class="center hidden-phone">WA</td>
+        </tr>
+        <tr class="gradeA">
+            <td>SXSW Cares</td>
+            <td>Emergency and Disaster Response</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeA">
+            <td>Red Cross of New Orleans</td>
+            <td>Emergency and Disaster Response</td>
+            <td class="hidden-phone">New Orleans</td>
+            <td class="center hidden-phone">LA</td>
+        </tr>
+
+        <tr class="gradeX">
+            <td>HAMM Nashville</td>
+            <td>Rehabilitation Clinic</td>
+            <td class="hidden-phone">Nashville</td>
+            <td class="center hidden-phone">TN</td>
+        </tr>
+        <tr class="gradeC">
+            <td>HAMM Austin</td>
+            <td>Rehabilitation Clinic</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeC">
+            <td>Dell Children's Hospital</td>
+            <td>Health Organization</td>
+            <td class="hidden-phone">Round Rock</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeX">
+            <td>Cowboy's for A Cure</td>
+            <td>Health Cause &amp; Research</td>
+            <td class="hidden-phone">Dallas</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeX">
+            <td>Susan B. Komen Dallas Chapter</td>
+            <td>Health Cause &amp; Research</td>
+            <td class="hidden-phone">Dallas</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeX">
+            <td>Susan B. Komen Austin Chapter</td>
+            <td>Health Cause &amp; Research</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeC">
+            <td>KIPP Academy - Boston</td>
+            <td>School Organization</td>
+            <td class="hidden-phone">Boston</td>
+            <td class="center hidden-phone">MA</td>
+        </tr>
+        <tr class="gradeC">
+            <td>KIPP Academy - Austin</td>
+            <td>School Organization</td>
+            <td class="hidden-phone">Austin</td>
+            <td class="center hidden-phone">TX</td>
+        </tr>
+        <tr class="gradeU">
+            <td>Grace Christian School</td>
+            <td>School Organization</td>
+            <td class="hidden-phone">Anchorage</td>
+            <td class="center hidden-phone">AK</td>
+        </tr>
+        </tbody>
+        </table>
+
+        </div>
+        </div>
+        
+        </section>
+        </div>
+        </div>
+<!-- end datatable -->
+
+        </div>
+        <!--body wrapper end-->
+
+    <!--footer section start-->
+    <footer class="sticky-footer">
+        Footer contents goes here
+    </footer>
+    <!--footer section end-->
+
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/jquery.isotope.js"></script>
+    
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+<!--dynamic table initialization -->
+<script src="js/dynamic_table_init.js"></script>
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>   
+    
+</body>
+</html>
