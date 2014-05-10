@@ -4117,3 +4117,13 @@ ul.labels-info li a:hover, ul.labels-info li a:focus {
 .dropdown-profile {
     min-width:170px !important;
 }
+
+.select-btn-group select {
+    display: none;
+}
+
+.select-btn-group .btn.active {
+    color: #fff;
+    background-color: #47a447;
+    border-color: #398439;
+}
