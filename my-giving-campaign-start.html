@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Guaranteed Giving">
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <title>Form Wizard</title>
+    
+  <link href="css/style.css" rel="stylesheet">
+    
+  <!--stepy css -->
+  <link href="css/jquery.stepy.css" rel="stylesheet">
+  <!--pickers css-->
+  <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/datepicker-custom.css" />
+    
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="horizontal-menu-page">
+
+<section>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--<li ><a href="index.html">Dashboard</a></li>-->
+                    <li class="active"><a href="#">How It Works</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Donate <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Start Giving</a></li>
+                            <li><a href="#">Manage My Giving</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">Fontawesome</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organizations <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">List Your Organization</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!--<img alt="" src="images/photos/user-avatar.png">--><i class="fa fa-user"></i><span class="user-name">Jennifer Ratterree</span><b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a href="#"><i class="fa fa-dollar"></i>  My Giving</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i>  Account Setting</a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                My Giving Account
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">My Giving Account</a>
+                </li>
+                <li class="active"> Start New Giving </li>
+            </ul>
+        </div>
+        <!-- page heading end-->
+
+        <!--body wrapper start-->
+        <div class="wrapper">
+<!-- upper row -->
+        <div class="row">
+            <div class="col-sm-7 col-md-6">
+                <section class="panel">
+                    <header class="panel-heading">
+                        <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-cog"></a>
+                        <a href="javascript:;" class="fa fa-trash-o"></a>
+                        </span>
+                        Giving To: Gateway Church Northwest 
+                    </header>
+                    <div class="panel-body">
+                        
+    <!-- Selected Campaign Start -->
+                        <div class="panel panel-success border-true">
+
+                            <div class="panel-heading">
+                              <h3 class="panel-title">General Giving Fund</h3>
+
+
+
+                            </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                  <a class="pull-left" href="#">
+                                    <img class="media-object img-rounded" src="images/organizations/gateway-church-northwest/Gateway_Church_64.jpg" alt="...">
+                                  </a>
+                                  <div class="media-body">
+
+                                    Description of a recurring donation giving campaign.  Will probably be about 1-2 sentences long, but should be able to accomodate a very lengthy description as well.
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- Selected Campaign Stop -->
+
+                        
+                    
+<!-- Campaign: Manage Giving Start -->
+                        <section class="panel border-true">
+                            <header class="panel-heading">
+                                <h4>Start Giving</h4>
+                            </header>
+                            <div class="panel-body">
+                                <div class="box-widget">
+                                    <div class="widget-head clearfix">
+                                        <div id="top_tabby" class="block-tabby pull-left">
+                                        </div>
+                                    </div>
+                                <div class="widget-container">
+                                    <div class="widget-block">
+                                        <div class="widget-content box-padding">
+                                            <form id="stepy_form" class=" form-horizontal left-align form-well">
+                                                <fieldset title="Amount">
+                                                    <legend>and Schedule</legend>
+                                                        <section class="panel">
+                                                            <header class="panel-heading custom-tab">
+                                                                <ul class="nav nav-tabs">
+                                                                    <li class="active">
+                                                                        <a data-toggle="tab" href="#give-weekly">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            Give Weekly
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="">
+                                                                        <a data-toggle="tab" href="#give-monthly">
+                                                                            <i class="fa fa-calendar-o"></i>
+                                                                            Give Monthly
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </header>
+                                                            <div class="panel-body">
+                                                                <div class="tab-content">
+                                                                    <div id="give-weekly" class="tab-pane active">
+                                                                        <!-- WEEKLY amount and schedule fields -->
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-12">Enter Your Weekly Giving Amount</label>
+                                                                            <div class="col-xs-7 col-sm-6 col-md-6">
+                                                                                <div class="input-group input-group-lg m-bot15">
+                                                                                    <span class="input-group-addon">$</span>
+                                                                                    <input type="text" class="form-control" placeholder="0000" name="amount">
+                                                                                    <span class="input-group-addon ">.00</span>
+                                                                                </div>
+                                                                            </div>
+                                                                                                                                                                                             <div class="col-xs-5 col-md-6 col-sm-6">
+                                                                                <p class="help-block small">Giving <span>$150.00 weekly</span> will total $7800.00 each year.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-12">Select A Day to Give Each Week</label>
+                                                                            <div class="col-xs-7 col-sm-6 col-md-6">
+                                                                                <select class="form-control input-lg m-bot15">
+                                                                                    <option>Monday</option>
+                                                                                    <option>Tuesday</option>
+                                                                                    <option>Wednesday</option>
+                                                                                    <option>Thursday</option>
+                                                                                    <option>Friday</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="col-xs-5 col-md-6 col-sm-6">
+                                                                                <p class="help-block small">Day of the Week that Giving Should Process</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="give-monthly" class="tab-pane ">                                                                               <!-- MONTHLY amount and schedule fields -->
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-12">Enter Your Monthly Giving Amount</label>
+                                                                            <div class="col-xs-7 col-sm-6 col-md-6">
+                                                                                <div class="input-group input-group-lg m-bot15">
+                                                                                    <span class="input-group-addon">$</span>
+                                                                                    <input type="text" class="form-control" placeholder="0000" name="amount">
+                                                                                    <span class="input-group-addon ">.00</span>
+                                                                                </div>
+                                                                            </div>
+                                                                                                                                                                                             <div class="col-xs-5 col-md-6 col-sm-6">
+                                                                                <p class="help-block small">Giving <span>$150.00 weekly</span> will total $1800.00 each year.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-12">Select Your Next Monthly Giving Date</label>
+                                                                            <div class="col-xs-7 col-sm-6 col-md-6">
+                                                                                <input class="form-control form-control-inline input-medium default-date-picker"  size="16" type="text" value="" placeholder="MM-DD-YYYY" />
+                                                                                <span class="help-block"><small>Select date</small></span>
+                                                                            </div>
+                                                                            <div class="col-xs-5 col-md-6 col-sm-6">
+                                                                                <p class="help-block small">Giving will repeat every 30 days from your next date.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                       </section>
+
+                                                    </fieldset>
+                                                    <fieldset title="Payment">
+                                                    <legend>Select/Add</legend>
+                                                    <section class="panel">
+                                                        <!-- SELECT PAYMENT -->
+                                                        <div class="form-group">
+                                                            <label class="col-sm-12"><strong><i class="fa fa-money"></i> Select A Payment Method</strong></label>
+                                                                <div class="col-xs-9 col-md-10">
+                                                                    <select class="form-control input-lg m-bot15">
+                                                                        <option selected="true" disabled="disabled">My Payment Methods</option>                                                                 
+                                                                        <optgroup label="Checking Accounts">
+                                                                        <option>CHECKING: ********6789</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Credit Cards">
+                                                                        <option>VISA: xxxx-1234 (10/16)</option>
+                                                                        <option>MAST: xxxx-1234 (06/15)</option>
+                                                                        <option class="expired">MAST: xxxx-1234 (06/12)</option>
+                                                                        </optgroup>                     
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-3 col-md-2">
+                                                                    <a href="#edit-payment" data-toggle="modal" class="btn btn-lg btn-info"><i class="fa fa-cog"></i></a>
+                                                                    
+                                                                </div>
+                                                        
+                                                        </div>
+                                                        <!-- END SELECT PAYMENT -->
+                                                        <!-- SELECT ADDRESS FIELDS -->
+                                                        <div class="form-group">
+                                                            <label class="col-sm-12"><strong><i class="fa fa-home"></i> Select An Address For Billing</strong></label>
+                                                            <div class="col-xs-9 col-md-10">
+                                                            <select class="form-control input-lg m-bot15">
+                                                                <option selected="true" disabled="disabled">My Addresses</option>                                                                 
+                                                                
+                                                                <option>Jennifer Ratterree, American Payment Services, PO Box 130, Marble Falls, TX 78654</option>                                                                                                                         <option>Jennifer Ratterree, American Payment Services, PO Box 130, Marble Falls, TX 78654</option>                    
+                                                            </select>
+                                                            </div>
+                                                                                                                                                                         <div class="col-xs-3 col-md-2">
+                                                                <a href="#edit-address" data-toggle="modal" class="btn btn-lg btn-info"><i class="fa fa-cog"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- END SELECT ADDRESS FIELDS -->
+                                                        
+                                                        </section>
+                                                        </fieldset>
+                                                        <fieldset title="Confirm">
+                                                            <legend>and Save</legend>
+                                                            <section class="panel">
+                                                                <div class="panel-body invoice">
+                                                                    <div class="invoice-address">
+                                                                        <div class="row">
+                                                                            <div class="col-md-5 col-sm-5">
+                                                                                <h4 class="inv-to">Bill To</h4>
+                                                                                <h2 class="corporate-id">Jennifer Ratterree</h2>
+                                                                                <p>
+                                                                                    110 Avenue H<br>
+                                                                                    Suite #207<br>
+                                                                                    Austin, TX<br>
+                                                                                    78654
+                                                                                </p>
+
+                                                                            </div>
+                                                                            <div class="col-md-4 col-md-offset-3 col-sm-4 col-sm-offset-3">
+                                                                                <div class="inv-col"><span>Pay by E-Check</span><br />****5678</div>
+                                                                                <div class="inv-col"><span>Next Giving Date:</span><br/> June 31, 2014</div>
+                                                                                <h1 class="t-due">Weekly Giving</h1>
+                                                                                <h2 class="amnt-value">$ 150.00</h2>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </section>
+                                                        </fieldset>
+                                                    <button type="submit" class="finish btn btn-success btn-extend"><i class="fa fa-check"></i> Finish &amp; Save!</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </section>
+                        
+                        
+
+<!-- Campaign: Manage Giving End -->
+                
+                    </div>
+                    <footer class="panel-footer">
+                        <h4>You are Giving $150.00 Weekly
+                        <br><small>Next Giving Date: June 31, 2014</small></h4>
+                                                        
+                    </footer>
+                </section>
+                
+                <section class="panel">
+                    <header class="panel-heading">
+                        Giving to: Church in Austin
+                    <span class="tools pull-right">
+                        <a href="javascript:;" class="fa fa-cog"></a>
+                        <a href="javascript:;" class="fa fa-trash-o"></a>
+                    </span>
+                    </header>
+                    <div class="panel-body">
+                        Panel Contents
+                    </div>
+                    <footer class="panel-footer">
+                        <h4>You are Giving $1000.00 Every Month
+                        <br><small>Next Giving Date: June 28, 2014</small></h4>
+                                                        
+                    </footer>
+                </section>
+                <a class="row state-overview" href="#">
+                     <div class="col-xs-12">
+                        <div class="panel green">
+                            <div class="symbol">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        <div class="state-value">
+                            <div class="value">Add New</div>
+                                <div class="title">Start Another Giving Campaign</div>
+                        </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+<!-- MY ACCOUNT START -->
+<!-- MY ACCOUNT COLUMN -->
+            <div class="col-sm-5 col-md-6">
+                <section class="panel">
+                    <header class="panel-heading">
+                        <h4>My Account</h4>
+                    </header>
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                                    <p class="help-block">Example block-level help text here.</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword1" class="col-lg-2 col-sm-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                                    <!--<p class="help-block">Example block-level help text here.</p>-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-disable">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+ <!-- MY ACCOUNT COLUMN END -->
+<!-- MY ACCOUNT END -->           
+            
+<!-- upper row ends -->
+
+            
+<!-- end main content -->
+
+        </div>
+<!--body wrapper end-->
+
+    <!--footer section start-->
+    <footer class="sticky-footer">
+        Footer contents goes here
+    </footer>
+    <!--footer section end-->
+
+<!-- MODAL edit-payment -->
+                        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="edit-payment" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title">My Payment Methods</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                
+                                        <section class="panel">
+                                            <header class="panel-heading custom-panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h3 class="pull-left">My Credit Cards</h3>
+                                                        <span class="tools pull-right">
+                                                            <a class="fa fa-plus"> New Card</a>
+                                                         </span>
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        <!--START My Credit Cards Accordion -->
+                                        <div class="panel-group " id="accordion-cards">
+                                            <div class="panel grey-bg-border">
+                                                <div class="panel-heading dark">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cards" href="#collapse-card-1">
+                                                            <i class="fa fa-credit-card"></i> VISA *1111
+                                                            <i class="fa fa-cog pull-right"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-card-1" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="control-group m-bot15">
+                                                            <fieldset>
+                                                            <div class="row">
+                                                                <label class="col-xs-6">First Name</label>
+                                                                <label class="col-xs-6">Last Name</label>
+                                                            </div>
+                                                            <div class="controls">
+                                                                <div class="row m-bot15">                                                                                         <div class="col-xs-6">
+                                                                    <input type="text" class="form-control input-sm m-bot15" title="First Name" required="" placeholder="Jennifer">
+                                                                    </div>
+                                                                                                                                                                                <div class="col-xs-6">
+                                                                    <input type="text" class="form-control input-sm m-bot15" title="Last Name" required="" placeholder="Ratterree">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row m-bot15">
+                                                                        <label class="col-xs-12">Card Number</label>
+                                                                    
+                                                                    <div class="col-xs-9">
+                                                                        <input type="text" class="form-control input-sm" autocomplete="off" maxlength="19" title="Credit Card Number" required="" placeholder="4111-1111-1111-1111">
+                                                                    </div>
+                                                                    <div class="col-xs-3">
+                                                                        <button disabled class="btn-payment btn-sm"><span class="pw pw-visa"></span>
+                                                                    </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                <label class="col-xs-9">Expiration</label>
+                                                                <label class="col-xs-3">CVV</label>
+                                                                <div class="col-xs-6 col-sm-6">
+
+                                                                <select class="form-control input-sm pull-left" name="cc_exp_mo">
+                                                                    <option value="01">January</option>
+                                                                    <option value="02">February</option>
+                                                                    <option value="03">March</option>
+                                                                    <option value="04">April</option>
+                                                                    <option value="05">May</option>
+                                                                    <option value="06">June</option>
+                                                                    <option value="07">July</option>
+                                                                    <option value="08">August</option>
+                                                                    <option value="09">September</option>
+                                                                    <option value="10">October</option>
+                                                                    <option value="11">November</option>
+                                                                    <option value="12">December</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-3 col-sm-3">
+                                                                <select class="form-control input-sm" name="cc_exp_yr">
+                                                                    <option>2014</option>
+                                                                    <option>2015</option>
+                                                                    <option>2016</option>
+                                                                    <option>2017</option>
+                                                                    <option>2018</option>
+                                                                    <option>2019</option>
+                                                                    <option>2020</option>
+                                                                    <option>2021</option>
+                                                                    <option>2022</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-3 col-sm-3">
+                                                                <input type="text" class="form-control input-sm" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required="" placeholder="123">
+                                                            </div>
+
+
+                                                        </div>
+                                                        </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <a class="accordion-toggle btn btn-success" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" type="button"><i class="fa fa-credit-card"></i> Save</a>
+                                                    <a class="btn btn-danger pull-right" type="button"><i class="fa fa-trash-o"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel grey-bg-border">
+                                                <div class="panel-heading dark">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-cards" href="#collapse-card-2">
+                                                            <i class="fa fa-credit-card"></i> AMEX *4353
+                                                            <i class="fa fa-cog pull-right"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-card-2" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="control-group m-bot15">
+                                                            <fieldset>
+                                                            <div class="row">
+                                                                <label class="col-xs-6">First Name</label>
+                                                                <label class="col-xs-6">Last Name</label>
+                                                            </div>
+                                                            <div class="controls">
+                                                                <div class="row m-bot15">                                                                                         <div class="col-xs-6">
+                                                                    <input type="text" class="form-control input-sm m-bot15" title="First Name" required="" placeholder="Jennifer">
+                                                                    </div>
+                                                                                                                                                                                <div class="col-xs-6">
+                                                                    <input type="text" class="form-control input-sm m-bot15" title="Last Name" required="" placeholder="Ratterree">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row m-bot15">
+                                                                        <label class="col-xs-12">Card Number</label>
+                                                                    
+                                                                    <div class="col-xs-9">
+                                                                        <input type="text" class="form-control input-sm" autocomplete="off" maxlength="19" title="Credit Card Number" required="" placeholder="3511-1111-1111-1111">
+                                                                    </div>
+                                                                    <div class="col-xs-3">
+                                                                        <button disabled class="btn-payment btn-sm"><span class="pw pw-american-express"></span>
+                                                                    </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                <label class="col-xs-9">Expiration</label>
+                                                                <label class="col-xs-3">CVV</label>
+                                                                <div class="col-xs-6 col-sm-6">
+
+                                                                <select class="form-control input-sm pull-left" name="cc_exp_mo">
+                                                                    <option value="01">January</option>
+                                                                    <option value="02">February</option>
+                                                                    <option value="03">March</option>
+                                                                    <option value="04">April</option>
+                                                                    <option value="05">May</option>
+                                                                    <option value="06">June</option>
+                                                                    <option value="07">July</option>
+                                                                    <option value="08">August</option>
+                                                                    <option value="09">September</option>
+                                                                    <option value="10">October</option>
+                                                                    <option value="11">November</option>
+                                                                    <option value="12">December</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-3 col-sm-3">
+                                                                <select class="form-control input-sm" name="cc_exp_yr">
+                                                                    <option>2014</option>
+                                                                    <option>2015</option>
+                                                                    <option>2016</option>
+                                                                    <option>2017</option>
+                                                                    <option>2018</option>
+                                                                    <option>2019</option>
+                                                                    <option>2020</option>
+                                                                    <option>2021</option>
+                                                                    <option>2022</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-3 col-sm-3">
+                                                                <input type="text" class="form-control input-sm" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required="" placeholder="1234">
+                                                            </div>
+
+
+                                                        </div>
+                                                        </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <a class="accordion-toggle btn btn-success" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" type="button"><i class="fa fa-credit-card"></i> Save</a>
+                                                    <a class="btn btn-danger pull-right" type="button"><i class="fa fa-trash-o"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--collapse end-->
+                                        
+                                        </section>
+                                        <!-- My Checking Accounts -->
+                                        <section class="panel">
+                                            <header class="panel-heading custom-panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h3 class="pull-left">My E-Checks</h3>
+                                                        <span class="tools pull-right">
+                                                            <a class="fa fa-plus"> New Account</a>
+                                                         </span>
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        <!--START My E-Checks Accordion -->
+                                        <div class="panel-group " id="accordion-checks">
+                                            <div class="panel grey-bg-border">
+                                                <div class="panel-heading dark">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-checks" href="#collapse-check-1">
+                                                            <i class="fa fa-lock"></i> University Feder... *5678
+                                                            <i class="fa fa-cog pull-right"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-check-1" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                                                                    <div class="control-group m-bot15">
+                                                <fieldset>
+                                                <label class="control-label">Bank Name</label>
+                                                <div class="controls">
+                                                    <div class="row m-bot15">                                                                                         <div class="col-xs-12">
+                                                        <input type="text" class="form-control input-sm m-bot15" pattern="\w+ \w+.*" title="First and Last name" required="" placeholder="University Federal Credit Union">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-bot15">
+                                                        <label class="col-xs-6">Routing Number</label>
+                                                        <label class="col-xs-6">Account Number</label>
+                                                        <div class="col-xs-6">
+                                                            <input type="text" class="form-control input-sm" autocomplete="off" maxlength="9" title="9 Digit Bank Routing Number" required="" placeholder="123456789">
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <input type="text" class="form-control input-sm" autocomplete="off" maxlength="8" title="8 Digit Bank Account Number" required="" placeholder="12345678">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                    <label class="col-xs-12">Account Type</label>
+                                                    <div class="col-xs-6 col-sm-6 pull-left">
+                                                        
+                                                    <select class="form-control input-sm" name="cc_exp_mo">
+                                                        <option value="Checking">Checking</option>
+                                                        <option value="Savings">Savings</option>
+                                                    </select>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            </div>
+                                            </fieldset>
+                                            </div>
+                                                    <a class="accordion-toggle btn btn-success" data-toggle="collapse" data-parent="#accordion-checks" href="#collapse-check-1" type="button"><i class="fa fa-credit-card"></i> Save</a>
+                                                    <a class="btn btn-danger pull-right" type="button"><i class="fa fa-trash-o"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END CHECK 1-->
+                                        </div>
+                                        <!--collapse end-->
+                                        </section>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- END MODAL edit-payment -->
+
+<!-- MODAL edit-address -->
+                        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="edit-address" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                        <h4 class="modal-title">Edit Addresses</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- My Adresses -->
+                                        <section class="panel">
+                                            <header class="panel-heading custom-panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h3 class="pull-left">My Addresses</h3>
+                                                        <span class="tools pull-right">
+                                                            <a class="fa fa-plus"> Add New</a>
+                                                         </span>
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        <!--START My E-Checks Accordion -->
+                                        <div class="panel-group " id="accordion-checks">
+                                            <div class="panel grey-bg-border">
+                                                <div class="panel-heading dark">
+                                                    <h4 class="panel-title">
+                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-address" href="#collapse-address-1">
+                                                            <i class="fa fa-home"></i> American Payment Services P...
+                                                            <i class="fa fa-cog pull-right"></i>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapse-address-1" class="panel-collapse collapse">
+                                                    <div class="panel-body">                                                                                        <div class="control-group m-bot15">
+                                                            <fieldset>
+                                                            <label class="control-label">Addressee's Name</label>
+                                                            <div class="controls">
+                                                                <div class="row m-bot15">                                                                                         <div class="col-xs-12">
+                                                                    <input type="text" class="form-control input-sm m-bot15" title="First and Last name" required="" placeholder="Jennifer Ratterree">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row m-bot15">
+                                                                <label class="col-xs-12">Street Address</label>                                             
+                                                                <div class="col-xs-12">
+                                                                    <input type="text" class="form-control input-sm" autocomplete="off" title="Street Address" required="" placeholder="110 Avenue H">
+                                                                </div>
+                                                                </div>
+                                                                <div class="row m-bot15">
+                                                                <label class="col-xs-12">Address 2 (Optional)</label>
+
+                                                                <div class="col-xs-12">
+                                                                    <input type="text" class="form-control input-sm" autocomplete="off" title="Suite or Apartment Number" required="" placeholder="Suite #207">
+                                                                </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                <label class="col-xs-5">City</label>
+                                                                <label class="col-xs-3">State</label>
+                                                                <label class="col-xs-4">Zip</label>
+
+                                                                <div class="col-xs-5">
+                                                                    <input type="text" class="form-control input-sm" autocomplete="off" title="City" required="" placeholder="Austin">
+                                                                </div>
+
+                                                                <div class="col-xs-3">
+                                                                    <input type="text" class="form-control input-sm" autocomplete="off" title="State" maxlength="2" required="" placeholder="TX">
+                                                                </div>
+                                                            <div class="col-xs-4">
+                                                                <input type="text" class="form-control input-sm" autocomplete="off" maxlength="7" title="7 Digit Zip Code" required="" placeholder="78654">
+                                                            </div>
+
+
+                                                            </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <a class="accordion-toggle btn btn-success" data-toggle="collapse" data-parent="#accordion-address" href="#collapse-address-1" type="button"><i class="fa fa-home"></i> Save</a>
+                                                    <a class="btn btn-danger pull-right" type="button"><i class="fa fa-trash-o"></i> Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END CHECK 1-->
+                                        </div>
+                                        <!--collapse end-->
+                                            
+                                        </section>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- END MODAL edit-address -->    
+    
+    
+</section>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.stepy.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+<script>
+    /*=====STEPY WIZARD====*/
+    $(function() {
+        $('#default').stepy({
+            backLabel: 'Previous',
+            block: true,
+            nextLabel: 'Next',
+            titleClick: true,
+            titleTarget: '.stepy-tab'
+        });
+    });
+    /*=====STEPY WIZARD WITH VALIDATION====*/
+    $(function() {
+        $('#stepy_form').stepy({
+            backLabel: 'Back',
+            nextLabel: 'Next',
+            errorImage: true,
+            block: true,
+            description: true,
+            legend: false,
+            titleClick: true,
+            titleTarget: '#top_tabby',
+            validate: true
+        });
+        $('#stepy_form').validate({
+            errorPlacement: function(error, element) {
+                $('#stepy_form div.stepy-error').append(error);
+            },
+            rules: {
+                /*'amount': 'required',
+                'next-date': 'required'*/
+            },
+            messages: {
+                /*'amount': {
+                    required: 'Please Enter An Amount'
+                },
+                'next-date': {
+                    required: 'Next Date Is Required!'
+                }*/
+            }
+        });
+    });
+</script>
+
+<!--pickers plugins-->
+<script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+<!--pickers initialization-->
+<script src="js/pickers-init.js"></script>
+
+</body>
+</html>

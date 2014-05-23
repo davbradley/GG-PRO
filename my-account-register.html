@@ -107,6 +107,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="fw-title">Now Giving To: Gateway Church Northwest</h4>
+                    
+<!-- Selected Campaign Start -->
                     <div class="panel panel-success">
                         
                         <div class="panel-heading">
@@ -127,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    
+<!-- Selected Campaign Stop -->
                     
                    
                     <div class="box-widget">
@@ -142,145 +144,109 @@
                                         <fieldset title="Step 1">
                                             <legend>Step 1: Giving Amount and Schedule</legend>
                                                 <section class="panel">
-                                                    <header class="panel-heading">
-                                                        Amount and Schedule
+                                                    <header class="panel-heading custom-tab ">
+                                                        <ul class="nav nav-tabs">
+                                                            <li class="active">
+                                                                <a href="#weekly" data-toggle="tab">
+                                                                   <i class="fa fa-calendar"></i>
+                                                                    Weekly Giving
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="#monthly" data-toggle="tab">
+                                                                <i class="fa fa-calendar-o"></i>
+                                                                Monthly Giving
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                                                     </header>
                                                     <div class="panel-body">
-                                                        <form class="form-horizontal adminex-form" method="get">
-                                                            <div class="form-group">
-                                                                <label class="col-md-2 col-sm-2 control-label">Name (Optional)</label>
-                                                                <div class="col-md-6 col-sm-6">
-                                                                    <input type="text" placeholder="Enter Name" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="col-sm-2 control-label col-lg-2" >Enter Amount</label>
-                                                                <div class="col-sm-4">
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active" id="weekly">
+                                                                
+                                                                <form class="form-horizontal adminex-form" method="get">                                                                                                                                        <div class="form-group">
+                                                                        <label class="col-sm-2 control-label col-md-4 col-lg-4" >Enter Your Weekly Giving Amount</label>
+                                                                        <div class="col-sm-4">
 
-                                                                    <div class="input-group input-group-lg m-bot15">
-                                                                        <span class="input-group-addon">$</span>
-                                                                        <input type="text" class="form-control" placeholder="00">
-                                                                        <span class="input-group-addon ">.00</span>
+                                                                            <div class="input-group input-group-lg m-bot15">
+                                                                                <span class="input-group-addon">$</span>
+                                                                                <input type="text" class="form-control" placeholder="00">
+                                                                                <span class="input-group-addon ">.00</span>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </form>
                                                             </div>
-                                                            <div class="form-group">
-                                                                <label class="col-md-2 col-sm-2 control-label">Schedule</label>
-                                                                <div class="col-md-6 col-sm-6">
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                                                            Weekly Giving
-                                                                        </label>
+                                                            <div class="tab-pane" id="monthly">
+                                                                <form class="form-horizontal adminex-form" method="get">
+                                                                                                                                                                                                                                                                   <div class="form-group">
+                                                                        <label class="col-sm-2 control-label col-md-4 col-lg-4" >Enter Your Monthly Giving Amount</label>
+                                                                        <div class="col-sm-4">
+
+                                                                            <div class="input-group input-group-lg m-bot15">
+                                                                                <span class="input-group-addon">$</span>
+                                                                                <input type="text" class="form-control" placeholder="00">
+                                                                                <span class="input-group-addon ">.00</span>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="radio">
-                                                                        <label>
-                                                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                                                            Monthly Giving
-                                                                        </label>
-                                                                    </div> 
-                                                                </div>
+                                                                </form>
                                                             </div>
-
-
-                                                        </form>
+                                                        </div>
                                                     </div>
-                                                    <footer class="panel-footer">
+                                                                                                                                              <footer class="panel-footer">
                                                         <h4>You are Giving $50.00 Weekly
                                                         <br><small>May 08, 2014</small></h4>
                                                         
                                                     </footer>
                                                 </section>
+
                                         </fieldset>
                                         <fieldset title="Step 2">
                                             <legend>Step 2: Payment Information</legend>
                                                     <section class="panel">
-            <div class="panel-body">
-                <form class="form-horizontal adminex-form" method="get">
-                    <div class="form-group">
-                        <div class="col-lg-10">
+                                                        <div class="panel-body">
+                                                            <form class="form-horizontal adminex-form" method="get">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12" for="inputSuccess">Select Your Payment Method</label>
+                                                                    <div class="col-lg-10">
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                
+                                                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                                                Credit Card
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                                                Check Payment
+                                                                            </label>
+                                                                        </div>
 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12" for="inputSuccess">Add Credit Card Details</label>
+                                                                    <div class="col-lg-10">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-4">
+                                                                                <input type="text" class="form-control" placeholder="Enter Card Number">
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <input type="text" class="form-control" placeholder="MM/YYYY">
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <input type="text" class="form-control" placeholder="CVV">
+                                                                            </div>
+                                                                        </div>
 
+                                                                    </div>
+                                                                </div>
 
-
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                    Weekly Giving
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                    Monthly Giving
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                    Yearly Giving
-                                </label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Inline checkboxes</label>
-                        <div class="col-lg-10">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                            </label>
-
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Selects</label>
-                        <div class="col-lg-10">
-                            <select class="form-control m-bot15">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-
-                            <select multiple class="form-control">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Column sizing</label>
-                        <div class="col-lg-10">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <input type="text" class="form-control" placeholder=".col-lg-2">
-                                </div>
-                                <div class="col-lg-3">
-                                    <input type="text" class="form-control" placeholder=".col-lg-3">
-                                </div>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" placeholder=".col-lg-4">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </section>
+                                                            </form>
+                                                        </div>
+                                                    </section>
                                             <div class="form-group">
                                                 <label class="col-md-2 col-sm-2 control-label">Name (optiona)</label>
                                                 <div class="col-md-6 col-sm-6">
@@ -289,7 +255,7 @@
                                             </div>
                                         </fieldset>
                                         <fieldset title="Step 3">
-                                            <legend>description three</legend>
+                                            <legend>Step 3: Confirm Giving</legend>
                                             <div class="form-group">
                                                 <label class="col-md-2 col-sm-2 control-label">Text Input</label>
                                                 <div class="col-md-6 col-sm-6">
@@ -335,9 +301,8 @@
 </section>
 
 <!-- Placed js at the end of the document so the pages load faster -->
-<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.stepy.js"></script>
 <script src="js/bootstrap.min.js"></script>
