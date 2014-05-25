@@ -280,6 +280,8 @@ hr {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     float: left;
+    border: 1px thin #FFFFFF;
+    min-height:45px;
 }
 
 .left-side .logged-user .media-body {
@@ -636,6 +638,17 @@ h5.left-nav-title {
     border: none;
 }
 
+.admin-toggle {
+    padding: 12px 10px;
+    border-color: #fff;
+    background: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    color: #65cea7;
+}
+
 .notification-menu .dropdown-toggle:hover,
 .notification-menu .dropdown-toggle:focus,
 .notification-menu .dropdown-toggle:active,
@@ -671,6 +684,7 @@ h5.left-nav-title {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 5px;
+    
 }
 
 .notification-menu .dropdown-menu:after {
