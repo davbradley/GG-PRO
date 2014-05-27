@@ -57,7 +57,29 @@ hr {
             CUSTOM JUMBO
 -------------------------------*/
 
+.full-width-image-1 {
+	background: url(../images/BG-2-guaranteed-giving-online-donation-auto-recurring.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.logo-wrapper {
+	display: inline-block;
+    color:#2A323F;
+}
+
+.logo-wrapper h1 {
+    color:#FFFFFF;
+    font-weight:600;
+    text-shadow: 2px 2px 3px rgba(150, 150, 150, 0.9);
+}
+
 /* Custom container */
+.martop-15 {
+    margin-top:30px;
+}
+
 .container-full {
   margin: 0 auto;
   width: 100%;
@@ -68,9 +90,7 @@ hr {
   overflow:hidden;
 }
 
-.container-full h1 {
-    font-weight:700;
-}
+
 
 .btn-dark {
    background-color:#2A323F;
