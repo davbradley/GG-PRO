@@ -57,6 +57,10 @@ hr {
             CUSTOM JUMBO
 -------------------------------*/
 
+.white {
+    color:#FFFFFF !important;
+}
+
 .full-width-image-1 {
 	background: url(../images/BG-2-guaranteed-giving-online-donation-auto-recurring.jpg) no-repeat center center;
 	background-size: cover;
